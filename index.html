@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta " name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.loader {
+position: absolute;
+        left: 600px;
+        top: 100px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.loader2 {
+position: absolute;
+        left: 600px;
+        top: 300px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+
+.loader3 {
+position: absolute;
+        left: 600px;
+        top: 500px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
+<style>
+
+#myList {
+position: absolute;
+        left: 1140px;
+        top: 50px;
+}
+#myList1 {
+position: absolute;
+        left: 1140px;
+        top: 120px;
+}
+#myList2 {
+position: absolute;
+        left: 1140px;
+        top: 190px;
+}
+
+#myList3 {
+position: absolute;
+        left: 1140px;
+        top: 260px;
+}
+
+#myList4 {
+position: absolute;
+        left: 1140px;
+        top: 330px;
+}
+
+#myList5 {
+position: absolute;
+        left: 1140px;
+        top: 400px;
+}
+
+#myList6 {
+position: absolute;
+        left: 840px;
+        top: 85px;
+}
+
+#myList7 {
+position: absolute;
+        left: 840px;
+        top: 155px;
+}
+
+#myList8 {
+position: absolute;
+        left: 840px;
+        top: 155px;
+}
+
+#myList9 {
+position: absolute;
+        left: 840px;
+        top: 225px;
+}
+
+#myList10 {
+position: absolute;
+        left: 40px;
+        top: 50px;
+}
+
+#myList11 {
+position: absolute;
+        left: 40px;
+        top: 50px;
+}
+
+#myList12 {
+position: absolute;
+        left: 40px;
+        top: 50px;
+}
+
+#myList13 {
+position: absolute;
+        left: 0px;
+        top: -20px;
+}
+
+#myList14 {
+position: absolute;
+        left: 0px;
+        top: -20px;
+}
+
+#id {
+position: absolute;
+        left: 500px;
+        top: 500px;
+}
+
+#pass {
+position: absolute;
+        left: 500px;
+        top: 540px;
+}
+
+#idpic {
+position: absolute;
+        left: 400px;
+        top: 482px;
+}
+
+#passpic {
+position: absolute;
+        left: 400px;
+        top: 522px;
+}
+
+#vorod {
+position: absolute;
+        left: 490px;
+        top: 580px;
+}
+
+#vorodpanel {
+position: absolute;
+        left: 350px;
+        top: 300px;
+}
+
+#vorodtitle {
+position: absolute;
+        left: 150px;
+        top: 0px;
+}
+
+#pass2 {
+position: absolute;
+        left: 500px;
+        top: 500px;
+}
+
+#pass3 {
+position: absolute;
+        left: 500px;
+        top: 540px;
+}
+
+#tekrar_ramz {
+position: absolute;
+        left: 400px;
+        top: 482px;
+}
+
+#ramz_jadid {
+position: absolute;
+        left: 400px;
+        top: 522px;
+}
+
+#dastres{
+position: absolute;
+        left: 500px;
+        top: 322px;
+}
+
+#taghiir {
+position: absolute;
+        left: 490px;
+        top: 580px;
+}
+
+#vorodpanel2 {
+position: absolute;
+        left: 350px;
+        top: 300px;
+}
+
+#boar_karname_tahsili {
+position: absolute;
+left: 40px;
+top: 50px;
+}
+
+#boar_karname_tahsili2 {
+position: absolute;
+left: 40px;
+top: 550px;
+}
+
+</style>
+
+</head>
+<body>
+<p id="vorodtitle"> <img src="vorodtitle.jpg" width="600" height="200"  ></p>
+<p id="vorodpanel"> <img src="vorodpanel.jpg" width="400" height="450"  ></p>
+
+<p><input type="text" id="id" width="100" height="40" ></p>
+<p><input type="text" id="pass" width="100" height="40" ></p>
+<p id="idpic"> <img src="idpic.jpg" width="80" height="22"  ></p>
+<p id="passpic"> <img src="passpic.jpg" width="80" height="22"  ></p>
+<p id="vorod"> <img src="vorod.jpg" width="200" height="65"  onclick="myFunction0()" ></p>
+
+<p id="myList13"> <img src="m.jpg" width="1500" height="800"  ></p>
+
+<p id="myList14"> <img src="mark.jpg" width="1500" height="80" ></p>
+
+<div id="loader" class="loader"></div>
+<div id="loader2" class="loader2"></div>
+<div id="loader3" class="loader3"></div>
+
+
+<p id="myList"> <img src="safheh nokhost.jpg" width="300" height="70" onclick="myFunction()" ></p>
+<p id="myList1"> <img src="etelaat.jpg" width="300" height="70" onclick="myFunction1()" ></p>
+<p id="myList2"> <img src="omor amozesh.jpg" width="300" height="70" onclick="myFunction2()" ></p>
+<p id="myList3"> <img src="omor mali.jpg" width="300" height="70" onclick="myFunction3()" ></p>
+<p id="myList4"> <img src="ramz.jpg" width="300" height="70" onclick="myFunction4()" ></p>
+<p id="myList5"> <img src="khoroj.jpg" width="300" height="70" onclick="myFunction5()" ></p>
+<p id="myList6"> <img src="etelaat hoviati.jpg" width="300" height="70" onclick="myFunction6()" ></p>
+<p id="myList7"> <img src="etelaat daneshjoii.jpg" width="300" height="70" onclick="myFunction7()" ></p>
+<p id="myList8"> <img src="karname tahsili.jpg" width="300" height="70" onclick="myFunction8()" ></p>
+<p id="myList9"> <img src="mojavez en.jpg" width="300" height="70" onclick="myFunction3()" ></p>
+<p id="myList10"> <img src="board safhenokhost.jpg" width="400" height="600" ></p>
+<p id="myList11"> <img src="board etelaat hoviati.jpg" width="1000" height="500" ></p>
+<p id="myList12"> <img src="board etelaat daneshjoii.jpg" width="1000" height="200"  ></p>
+
+
+
+
+
+<p id="vorodpanel2"> <img src="vorodpanel2.jpg" width="400" height="450"  ></p>
+<p><input type="text" id="pass2" width="100" height="40" ></p>
+<p><input type="text" id="pass3" width="100" height="40" ></p>
+<p id="tekrar_ramz"> <img src="tekrar_ramz.jpg" width="80" height="22"  ></p>
+<p id="ramz_jadid"> <img src="ramz_jadid.jpg" width="80" height="22"  ></p>
+<p id="taghiir"> <img src="taghiir.jpg" width="200" height="65"  onclick="myFunction15()"  ></p>
+
+<p id="dastres"> <img src="dastres.jpg" width="300" height="95" ></p>
+
+
+
+<p id="boar_karname_tahsili"> <img src="boar_karname_tahsili.jpg" width="1000" height="500" ></p>
+
+<p id="boar_karname_tahsili2"> <img src="boar_karname_tahsili2.jpg" width="1000" height="500" ></p>
+
+
+
+<script>
+
+
+    var x = document.getElementById("myList");
+    x.style.display = "none";
+    var x1 = document.getElementById("myList1");
+    x1.style.display = "none";
+    var x3 = document.getElementById("myList3");
+    x3.style.display = "none";
+    var x2 = document.getElementById("myList2");
+    x2.style.display = "none";
+    var x4 = document.getElementById("myList4");
+    x4.style.display = "none";
+    var x5 = document.getElementById("myList5");
+    x5.style.display = "none";
+    var x6 = document.getElementById("myList6");
+    x6.style.display = "none";
+    var x7 = document.getElementById("myList7");
+    x7.style.display = "none";
+    var x8 = document.getElementById("myList8");
+    x8.style.display = "none";
+    var x9 = document.getElementById("myList9");
+    x9.style.display = "none";
+    var x10 = document.getElementById("myList10");
+    x10.style.display = "none";
+    var x11 = document.getElementById("myList11");
+    x11.style.display = "none";
+    var x12 = document.getElementById("myList12");
+    x12.style.display = "none";
+    var x13 = document.getElementById("myList13");
+    x13.style.display = "none";
+    var x14 = document.getElementById("myList14");
+    x14.style.display = "none";
+    
+    var loader = document.getElementById("loader");
+    loader.style.display = "none";
+    var loader2 = document.getElementById("loader2");
+    loader2.style.display = "none";
+    var loader3 = document.getElementById("loader3");
+    loader3.style.display = "none";
+
+    var pass2 = document.getElementById("pass2");
+    pass2.style.display = "none";
+    var pass3 = document.getElementById("pass3");
+    pass3.style.display = "none";
+    var tekrar_ramz = document.getElementById("tekrar_ramz");
+    tekrar_ramz.style.display = "none";
+    var ramz_jadid = document.getElementById("ramz_jadid");
+    ramz_jadid.style.display = "none";
+    var taghiir = document.getElementById("taghiir");
+    taghiir.style.display = "none";
+    
+    var vorodpanel2 = document.getElementById("vorodpanel2");
+    vorodpanel2.style.display = "none";
+    var dastres = document.getElementById("dastres");
+    dastres.style.display = "none";
+    var boar_karname_tahsili = document.getElementById("boar_karname_tahsili");
+    boar_karname_tahsili.style.display = "none";
+    var boar_karname_tahsili2 = document.getElementById("boar_karname_tahsili2");
+    boar_karname_tahsili2.style.display = "none";
+
+var ID0="98551024";
+var PASS0="5820129253";
+
+function myFunction0() {
+var id;
+id = document.getElementById("id").value;
+var pass;
+pass = document.getElementById("pass").value;
+if(pass==PASS0  && id==ID0)
+{
+x10.style.display = "block";
+x13.style.display = "block";
+x14.style.display = "block";
+x.style.display = "block";
+x3.style.display = "block";
+x1.style.display = "block";
+x2.style.display = "block";
+x4.style.display = "block";
+x5.style.display = "block";
+loader.style.display = "block";
+loader2.style.display = "block";
+loader3.style.display = "block";
+
+}
+
+
+    }
+
+
+function myFunction1() {
+
+
+x10.style.display = "none";
+x8.style.display = "none";
+x9.style.display = "none";
+x11.style.display = "none";
+x12.style.display = "none";
+
+pass2.style.display = "none";
+pass3.style.display = "none";
+tekrar_ramz.style.display = "none";
+ramz_jadid.style.display = "none";
+taghiir.style.display = "none";
+vorodpanel2.style.display = "none";
+dastres.style.display = "none";
+
+boar_karname_tahsili.style.display = "none";
+boar_karname_tahsili2.style.display = "none";
+ 
+ 
+  if (x6.style.display === "none") {
+    x6.style.display = "block";
+x7.style.display = "block";
+  } else {
+    x6.style.display = "none";
+x7.style.display = "none";
+  }
+  
+}
+
+function myFunction2() {
+
+
+x10.style.display = "none";
+x6.style.display = "none";
+x7.style.display = "none";
+x11.style.display = "none";
+x12.style.display = "none";
+
+pass2.style.display = "none";
+pass3.style.display = "none";
+tekrar_ramz.style.display = "none";
+ramz_jadid.style.display = "none";
+taghiir.style.display = "none";
+vorodpanel2.style.display = "none";
+dastres.style.display = "none";
+
+boar_karname_tahsili.style.display = "none";
+boar_karname_tahsili2.style.display = "none";
+
+  if (x8.style.display === "none") {
+    x8.style.display = "block";
+x9.style.display = "block";
+  } else {
+    x8.style.display = "none";
+x9.style.display = "none";
+  }
+
+}
+
+
+function myFunction6() {
+
+    
+x10.style.display = "none";
+x12.style.display = "none";
+x6.style.display = "none";
+x7.style.display = "none";
+x8.style.display = "none";
+x9.style.display = "none";
+
+pass2.style.display = "none";
+pass3.style.display = "none";
+tekrar_ramz.style.display = "none";
+ramz_jadid.style.display = "none";
+taghiir.style.display = "none";
+vorodpanel2.style.display = "none";
+dastres.style.display = "none";
+
+boar_karname_tahsili.style.display = "none";
+boar_karname_tahsili2.style.display = "none";
+
+  if (x11.style.display === "none") {
+    x11.style.display = "block";
+  } else {
+    x11.style.display = "none";
+  }
+
+}
+
+
+function myFunction7() {
+
+x10.style.display = "none";
+x11.style.display = "none";
+x6.style.display = "none";
+x7.style.display = "none";
+x8.style.display = "none";
+x9.style.display = "none";
+
+pass2.style.display = "none";
+pass3.style.display = "none";
+tekrar_ramz.style.display = "none";
+ramz_jadid.style.display = "none";
+taghiir.style.display = "none";
+vorodpanel2.style.display = "none";
+dastres.style.display = "none";
+
+boar_karname_tahsili.style.display = "none";
+boar_karname_tahsili2.style.display = "none";
+
+  if (x12.style.display === "none") {
+    x12.style.display = "block";
+  } else {
+    x12.style.display = "none";
+  }
+
+
+}
+
+function myFunction() {
+
+    
+x10.style.display = "block";
+
+x6.style.display = "none";
+x7.style.display = "none";
+x8.style.display = "none";
+x9.style.display = "none";
+x11.style.display = "none";
+x12.style.display = "none";
+
+pass2.style.display = "none";
+pass3.style.display = "none";
+tekrar_ramz.style.display = "none";
+ramz_jadid.style.display = "none";
+taghiir.style.display = "none";
+vorodpanel2.style.display = "none";
+dastres.style.display = "none";
+
+boar_karname_tahsili.style.display = "none";
+boar_karname_tahsili2.style.display = "none";
+}
+
+function myFunction5() {
+
+x.style.display = "none";
+x1.style.display = "none";
+x2.style.display = "none";
+x3.style.display = "none";
+x4.style.display = "none";
+x5.style.display = "none";
+x6.style.display = "none";
+x7.style.display = "none";
+x8.style.display = "none";
+x9.style.display = "none";
+x10.style.display = "none";
+x11.style.display = "none";
+x12.style.display = "none";
+x13.style.display = "none";
+x14.style.display = "none";
+
+loader.style.display = "none";
+loader2.style.display = "none";
+loader3.style.display = "none";
+
+pass2.style.display = "none";
+pass3.style.display = "none";
+tekrar_ramz.style.display = "none";
+ramz_jadid.style.display = "none";
+taghiir.style.display = "none";
+vorodpanel2.style.display = "none";
+dastres.style.display = "none";
+
+boar_karname_tahsili.style.display = "none";
+boar_karname_tahsili2.style.display = "none";
+}
+
+
+function myFunction15() {
+var t_m = document.getElementById("pass3").value;
+if(t_m == PASS0){
+PASS0=document.getElementById("pass2").value;
+}
+}
+
+function myFunction4() {
+x6.style.display = "none";
+x7.style.display = "none";
+x8.style.display = "none";
+x9.style.display = "none";
+x10.style.display = "none";
+x11.style.display = "none";
+x12.style.display = "none";
+dastres.style.display = "none";
+
+boar_karname_tahsili.style.display = "none";
+boar_karname_tahsili2.style.display = "none";
+
+pass2.style.display = "block";
+pass3.style.display = "block";
+tekrar_ramz.style.display = "block";
+ramz_jadid.style.display = "block";
+taghiir.style.display = "block";
+vorodpanel2.style.display = "block";
+
+}
+
+function myFunction3() {
+
+x6.style.display = "none";
+x7.style.display = "none";
+x8.style.display = "none";
+x9.style.display = "none";
+x10.style.display = "none";
+x11.style.display = "none";
+x12.style.display = "none";
+
+boar_karname_tahsili.style.display = "none";
+boar_karname_tahsili2.style.display = "none";
+
+pass2.style.display = "none";
+pass3.style.display = "none";
+tekrar_ramz.style.display = "none";
+ramz_jadid.style.display = "none";
+taghiir.style.display = "none";
+vorodpanel2.style.display = "none";
+
+dastres.style.display = "block";
+}
+
+
+
+function myFunction8() {
+
+x6.style.display = "none";
+x7.style.display = "none";
+x8.style.display = "none";
+x9.style.display = "none";
+x10.style.display = "none";
+x11.style.display = "none";
+x12.style.display = "none";
+
+boar_karname_tahsili.style.display = "none";
+
+boar_karname_tahsili2.style.display = "none";
+
+pass2.style.display = "none";
+pass3.style.display = "none";
+tekrar_ramz.style.display = "none";
+ramz_jadid.style.display = "none";
+taghiir.style.display = "none";
+vorodpanel2.style.display = "none";
+
+dastres.style.display = "none";
+
+boar_karname_tahsili.style.display = "block";
+boar_karname_tahsili2.style.display = "block";
+
+}
+</script>
+
+</body>
+</html>
+
